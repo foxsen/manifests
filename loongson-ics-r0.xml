@@ -1,22 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote  name="origin"
+           fetch="git@github.com:/foxsen" />
   <remote  name="mips"
            fetch="git://github.com/MIPS" />
   <default revision="refs/tags/mips-ics-4.0.3_r1m2"
            remote="mips"
            sync-j="4" />
 
-  <project path="build" name="build">
+  <!-- from loongson port repositories -->
+  <project path="build" name="build" remote="origin" revision="loongson-ics-r0">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+  <project path="bionic" name="bionic" remote="origin" revision="loongson-ics-r0" />
+  <project path="dalvik" name="dalvik" remote="origin" revision="loongson-ics-r0" />
+
+  <!-- from mips port repositories -->
   <project path="abi/cpp" name="abi-cpp" />
-  <project path="bionic" name="bionic" />
   <project path="bootable/bootloader/legacy" name="bootable-bootloader-legacy" />
   <project path="bootable/diskinstaller" name="bootable-diskinstaller" />
   <project path="bootable/recovery" name="bootable-recovery" />
   <project path="cts" name="cts" />
-  <project path="dalvik" name="dalvik" />
   <project path="development" name="development" />
   <project path="device/common" name="device-common" />
   <project path="device/generic/goldfish" name="device-generic-goldfish" />
