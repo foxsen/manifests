@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="origin"
+  <remote  name="lemote"
            fetch="git@github.com:/foxsen" />
   <remote  name="mips"
            fetch="git://github.com/MIPS" />
@@ -10,18 +10,24 @@
            sync-j="4" />
 
   <!-- from loongson port repositories -->
-  <project path="build" name="build" remote="origin" revision="loongson-ics-r0">
+  <project path="build" name="build" remote="lemote" revision="loongson-ics-r0">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="bionic" name="bionic" remote="origin" revision="loongson-ics-r0" />
-  <project path="dalvik" name="dalvik" remote="origin" revision="loongson-ics-r0" />
-  <project path="device/common" name="device-common" remote="origin" revision="loongson-ics-r0" />
-  <project path="device/lemote/yeeloong" name="device-lemote-yeeloong" remote="origin" revision="loongson-ics-r0" />
-  <project path="system/core" name="system-core" remote="origin" revision="loongson-ics-r0" />
-  <project path="hardware/libhardware" name="hardware-libhardware" remote="origin" revision="loongson-ics-r0" />
-  <project path="hardware/drm_gralloc" name="hardware-drm_gralloc" remote="origin" revision="loongson-ics-r0" />
-  <project path="external/drm" name="external-drm" remote="origin" revision="loongson-ics-r0" />
-  <project path="external/mesa" name="external-mesa" remote="origin" revision="loongson-ics-r0" />
+  <project path="bionic" name="bionic" remote="lemote" revision="loongson-ics-r0" />
+  <project path="dalvik" name="dalvik" remote="lemote" revision="loongson-ics-r0" />
+  <project path="device/common" name="device-common" remote="lemote" revision="loongson-ics-r0" />
+  <project path="device/lemote/yeeloong" name="device-lemote-yeeloong" remote="lemote" revision="loongson-ics-r0" />
+  <project path="system/core" name="system-core" remote="lemote" revision="loongson-ics-r0" />
+  <project path="hardware/libhardware" name="hardware-libhardware" remote="lemote" revision="loongson-ics-r0" />
+  <project path="hardware/drm_gralloc" name="hardware-drm_gralloc" remote="lemote" revision="loongson-ics-r0" />
+  <project path="external/drm" name="external-drm" remote="lemote" revision="loongson-ics-r0" />
+  <project path="external/mesa" name="external-mesa" remote="lemote" revision="loongson-ics-r0" />
+  <project path="external/wpa_supplicant_8" name="external-wpa_supplicant_8" remote="lemote" revision="loongson-ics-r0" />
+  <project path="frameworks/base" name="frameworks-base" remote="lemote" revision="loongson-ics-r0" />
+  <project path="external/qemu" name="external-qemu" remote="lemote" revision="loongson-ics-r0" />
+  <project path="hardware/libhardware_legacy" name="hardware-libhardware_legacy" remote="lemote" revision="loongson-ics-r0" />
+  <project path="system/vold" name="system-vold" remote="lemote" revision="loongson-ics-r0" />
+  <project path="prebuilt" name="prebuilt" remote="lemote" revision="loongson-ics-r0" />
 
   <!-- from mips port repositories -->
   <project path="abi/cpp" name="abi-cpp" />
@@ -132,7 +138,6 @@
   <project path="external/ppp" name="external-ppp" />
   <project path="external/proguard" name="external-proguard" />
   <project path="external/protobuf" name="external-protobuf" />
-  <project path="external/qemu" name="external-qemu" />
   <project path="external/qemu-pc-bios" name="external-qemu-pc-bios" />
   <project path="external/quake" name="external-quake" />
   <project path="external/safe-iop" name="external-safe-iop" />
@@ -157,11 +162,9 @@
   <project path="external/webrtc" name="external-webrtc" />
   <project path="external/wpa_supplicant" name="external-wpa_supplicant" />
   <project path="external/wpa_supplicant_6" name="external-wpa_supplicant_6" />
-  <project path="external/wpa_supplicant_8" name="external-wpa_supplicant_8" />
   <project path="external/xmlwriter" name="external-xmlwriter" />
   <project path="external/yaffs2" name="external-yaffs2" />
   <project path="external/zlib" name="external-zlib" />
-  <project path="frameworks/base" name="frameworks-base" />
   <project path="frameworks/compile/libbcc" name="frameworks-compile-libbcc" />
   <project path="frameworks/compile/linkloader" name="frameworks-compile-linkloader" />
   <project path="frameworks/compile/slang" name="frameworks-compile-slang" />
@@ -175,7 +178,6 @@
   <project path="frameworks/support" name="frameworks-support" />
   <project path="hardware/broadcom/wlan" name="hardware-broadcom-wlan" />
   <project path="hardware/invensense" name="hardware-invensense" />
-  <project path="hardware/libhardware_legacy" name="hardware-libhardware_legacy" />
   <project path="hardware/msm7k" name="hardware-msm7k" />
   <project path="hardware/qcom/gps" name="hardware-qcom-gps" />
   <project path="hardware/qcom/media" name="hardware-qcom-media" />
@@ -239,13 +241,11 @@
   <project path="packages/wallpapers/MusicVisualization" name="packages-wallpapers-MusicVisualization" />
   <project path="packages/wallpapers/NoiseField" name="packages-wallpapers-NoiseField" />
   <project path="packages/wallpapers/PhaseBeam" name="packages-wallpapers-PhaseBeam" />
-  <project path="prebuilt" name="prebuilt" />
   <project path="sdk" name="sdk" />
   <project path="system/bluetooth" name="system-bluetooth" />
   <project path="system/extras" name="system-extras" />
   <project path="system/media" name="system-media" />
   <project path="system/netd" name="system-netd" />
-  <project path="system/vold" name="system-vold" />
 
 </manifest>
 
