@@ -26,6 +26,9 @@
   <project path="frameworks/base" name="frameworks-base" remote="lemote" revision="loongson-ics-r0" />
   <project path="external/qemu" name="external-qemu" remote="lemote" revision="loongson-ics-r0" />
   <project path="hardware/libhardware_legacy" name="hardware-libhardware_legacy" remote="lemote" revision="loongson-ics-r0" />
+  <project path="hardware/lemote/liblights" name="hardware-lemote-liblights" remote="lemote" revision="loongson-ics-r0" />
+  <project path="external/alsa-lib" name="external-alsa-lib" remote="lemote" revision="loongson-ics-r0" />
+  <project path="external/alsa-utils" name="external-alsa-utils" remote="lemote" revision="loongson-ics-r0" />
   <project path="system/vold" name="system-vold" remote="lemote" revision="loongson-ics-r0" />
   <project path="prebuilt" name="prebuilt" remote="lemote" revision="loongson-ics-r0" />
 
